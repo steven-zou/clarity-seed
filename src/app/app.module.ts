@@ -8,18 +8,23 @@ import { ROUTING } from "./app.routing";
 import { HomeComponent } from "./home/home.component";
 import { AboutComponent } from "./about/about.component";
 
+import { HarborLibraryModule } from 'harbor-angular';
+import { InfoComponent } from './info/info.component';
+
 @NgModule({
     declarations: [
         AppComponent,
         AboutComponent,
-        HomeComponent
+        HomeComponent,
+        InfoComponent
     ],
     imports: [
         BrowserModule,
         FormsModule,
         HttpModule,
         ClarityModule.forRoot(),
-        ROUTING
+        ROUTING,
+        HarborLibraryModule.forRoot()
     ],
     providers: [],
     bootstrap: [AppComponent]

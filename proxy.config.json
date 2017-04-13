@@ -1,0 +1,53 @@
+{
+    "/api/*": {
+        "target": "https://10.117.4.165",
+        "secure": false,
+        "changeOrigin": true,
+        "logLevel": "debug"
+    },
+    "/service/*": {
+        "target": "https://10.117.4.165",
+        "secure": false,
+        "logLevel": "debug"
+    },
+    "/login": {
+        "target": "https://10.117.4.165",
+        "secure": false,
+        "logLevel": "debug"
+    },
+    "/sign_in": {
+        "target": "https://10.117.4.165",
+        "secure": false,
+        "logLevel": "debug"
+    },
+    "/log_out": {
+        "target": "https://10.117.4.165",
+        "secure": false,
+        "logLevel": "debug"
+    },
+    "/sendEmail": {
+        "target": "https://10.117.4.165",
+        "secure": false,
+        "logLevel": "debug"
+    },
+    "/language": {
+        "target": "https://10.117.4.165",
+        "secure": false,
+        "logLevel": "debug"
+    },
+    "/reset": {
+        "target": "https://10.117.4.165",
+        "secure": false,
+        "logLevel": "debug"
+    },
+    "/userExists": {
+        "target": "https://10.117.4.165",
+        "secure": false,
+        "logLevel": "debug"
+    },
+    "/reset_password": {
+        "target": "https://10.117.4.165",
+        "secure": false,
+        "logLevel": "debug"
+    }
+}
