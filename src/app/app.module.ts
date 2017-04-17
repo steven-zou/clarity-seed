@@ -10,6 +10,11 @@ import { AboutComponent } from "./about/about.component";
 
 import { HarborLibraryModule } from 'harbor-angular';
 import { InfoComponent } from './info/info.component';
+import { SERVICE_CONFIG, IServiceConfig } from 'harbor-angular';
+
+export const endpoints: IServiceConfig = {
+    systemInfoEndpoint: "/api/systeminfo"
+};
 
 @NgModule({
     declarations: [
@@ -24,7 +29,12 @@ import { InfoComponent } from './info/info.component';
         HttpModule,
         ClarityModule.forRoot(),
         ROUTING,
-        HarborLibraryModule.forRoot()
+        HarborLibraryModule.forRoot({
+            config: {
+                provide: SERVICE_CONFIG,
+                useValue: endpoints
+            }
+        })
     ],
     providers: [],
     bootstrap: [AppComponent]
